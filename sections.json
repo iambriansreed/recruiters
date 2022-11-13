@@ -1,0 +1,171 @@
+[
+    {
+        "question": "What type of role is this?",
+        "answers": [
+            {
+                "text": "Junior / Intermediate",
+                "value": 0
+            },
+            {
+                "text": "Other",
+                "value": 1
+            },
+            {
+                "text": "Senior",
+                "value": 7
+            },
+            {
+                "text": "Team Lead",
+                "value": 8
+            },
+            {
+                "text": "Architect/Advisor",
+                "value": 9
+            }
+        ],
+        "reason": "Sorry, I am only taking senior level or above roles."
+    },
+    {
+        "question": "What is the annual base compensation including salary and any sign-on bonuses?",
+        "answers": [
+            {
+                "text": "less than $200k",
+                "value": 0
+            },
+            {
+                "text": "more than $200k",
+                "value": 90
+            }
+        ],
+        "reason": "Sorry, I am only taking offers including salary and any sign-on bonuses above $200k."
+    },
+    {
+        "question": "What is your favorite food?",
+        "answers": [
+            {
+                "text": "Other",
+                "value": 900
+            },
+            {
+                "text": "Pizza",
+                "value": 900
+            },
+            {
+                "text": "Pizza",
+                "value": 900
+            }
+        ]
+    },
+    {
+        "question": "Is this role 100% remote?",
+        "answers": [
+            {
+                "text": "Yes",
+                "value": 9000
+            },
+            {
+                "text": "No",
+                "value": 0
+            }
+        ],
+        "reason": "Sorry, I am only taking roles that are 100% remote."
+    },
+    {
+        "question": "This role requires:",
+        "answers": [
+            {
+                "text": "A bachelors or masters degree",
+                "value": 0
+            },
+            {
+                "text": "A degree or equivalent experience of at least 10 years",
+                "value": 90000
+            },
+            {
+                "text": "A degree or equivalent experience of at least 5 years",
+                "value": 80000
+            }
+        ],
+        "reason": "I love learning but I don't have a college degree."
+    },
+    {
+        "question": "This role requires expert knowledge in:",
+        "answers": [
+            {
+                "text": "Java",
+                "value": 0
+            },
+            {
+                "text": "React",
+                "value": 900000
+            },
+            {
+                "text": "React Native",
+                "value": 800000
+            },
+            {
+                "text": "Angular",
+                "value": 700000
+            },
+            {
+                "text": "Other",
+                "value": 600000
+            }
+        ],
+        "reason": "I love coffee but don't want to work with Java."
+    },
+    {
+        "question": "What type of role is this?",
+        "answers": [
+            {
+                "text": "Full Time/ Direct Hire",
+                "value": 9000000
+            },
+            {
+                "text": "Contract to Hire",
+                "value": 0
+            },
+            {
+                "text": "Freelance / 1099",
+                "value": 8000000
+            }
+        ],
+        "reason": "Sorry, but contract to hire just isn't for me."
+    },
+    {
+        "question": "How many interviews are part of the hiring process?",
+        "answers": [
+            {
+                "text": "3 or less",
+                "value": 90000000
+            },
+            {
+                "text": "4 or more",
+                "value": 50000000
+            },
+            {
+                "text": "5 or more",
+                "value": 0
+            }
+        ],
+        "reason": "If you need 5 or more interviews to know if you have the right candidate, you are not looking for me."
+    },
+    {
+        "question": "Do your development teams use Agile methodology?",
+        "answers": [
+            {
+                "text": "Yes",
+                "value": 900000000
+            },
+            {
+                "text": "Transitioning to Agile",
+                "value": 500000000
+            },
+            {
+                "text": "No",
+                "value": 0
+            }
+        ],
+        "reason": "Sorry, Agile can be a pain but in the wild west world of software development Agile is the sheriff I need to stay in line."
+    }
+]
