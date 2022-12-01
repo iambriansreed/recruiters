@@ -4,7 +4,8 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "start": "http-server -S -C cert.pem  -o"
+        "start": "http-server -S -C cert.pem  -o",
+        "deploy": "gh-pages -d"
     },
     "repository": {
         "type": "git",

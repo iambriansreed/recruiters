@@ -26,33 +26,29 @@
         "reason": "Sorry, I am only taking senior level or above roles."
     },
     {
-        "question": "What is the annual base compensation including salary and any sign-on bonuses?",
+        "question": "What is the annual base compensation, salary not including bonuses?",
         "answers": [
             {
-                "text": "less than $200k",
+                "text": "less than $180k",
                 "value": 0
             },
             {
-                "text": "more than $200k",
+                "text": "more than $180k",
                 "value": 90
             }
         ],
-        "reason": "Sorry, I am only taking offers including salary and any sign-on bonuses above $200k."
+        "reason": "Sorry, I am only taking offers with a base salary above $180k."
     },
     {
-        "question": "What is your favorite food?",
+        "question": "Is a sign-on bonus available?",
         "answers": [
             {
-                "text": "Other",
+                "text": "Yes",
                 "value": 900
             },
             {
-                "text": "Pizza",
-                "value": 900
-            },
-            {
-                "text": "Pizza",
-                "value": 900
+                "text": "No",
+                "value": 100
             }
         ]
     },

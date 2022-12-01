@@ -49,8 +49,8 @@
                 font-size: 1.2em;
                 padding: 0.25em 0.7em;
                 line-height: 1.5;
-                border-radius: 5px;
                 border: solid 1px #999;
+                border-radius: 0.25rem;
             }
 
             .page {
@@ -89,10 +89,21 @@
                 text-decoration: none;
             }
 
-            input[type='radio'] {
+            fieldset {
+                display: block;
+                border-radius: 0.25rem;
+            }
+
+            fieldset label {
+                margin: 0 0 0.25rem;
+                display: block;
+            }
+
+            fieldset label input[type='radio'] {
                 width: 1.5em;
                 height: 1.5em;
-                vertical-align: text-top;
+                margin: 0 0.5rem 0 0;
+                vertical-align: middle;
             }
         </style>
     </head>
@@ -124,9 +135,9 @@
                 <h2>Awesome!</h2>
                 <h3>I think this opportunity might be a good fit.</h3>
                 <p>
-                    Please contact me on <a href="https://www.linkedin.com/in/iambriansreed/">LinkedIn</a>, or
-                    <a href="mailto:me+r@iambrian.com">email me</a> more information, and make sure to tell me the fit
-                    score is <strong id="fit-score">Loading...</strong>.
+                    Please <a href="https://calendly.com/iambriansreed">schedule time</a> to review the position and
+                    <a href="mailto:me+r@iambrian.com">email me</a> the job description so I can review it before we
+                    meet, make sure to include the fit score: <strong id="fit-score">Loading...</strong>.
                 </p>
                 <img src="https://media.giphy.com/media/111ebonMs90YLu/giphy.gif" width="320" />
             </div>
@@ -224,7 +235,7 @@
                 <section id="section-${sectionIndex}" style="display: none;" data-reason="${section.reason}">
                     <fieldset>
                         <legend>${section.question}</legend>
-                        ${section.answers.map(makeAnswersHtml(sectionIndex)).join('<br>')}
+                        ${section.answers.map(makeAnswersHtml(sectionIndex)).join('')}
                     </fieldset>
                 </section>
                 `;
