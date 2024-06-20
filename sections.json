@@ -29,15 +29,19 @@
         "question": "What is the annual base compensation, salary not including bonuses?",
         "answers": [
             {
-                "text": "less than $180k",
+                "text": "less than $160k",
                 "value": 0
             },
             {
-                "text": "more than $180k",
+                "text": "more than $160k",
+                "value": 60
+            },
+            {
+                "text": "more than $200k",
                 "value": 90
             }
         ],
-        "reason": "Sorry, I am only taking offers with a base salary above $180k."
+        "reason": "Sorry, I am only taking offers with a base salary above $160k."
     },
     {
         "question": "Is a sign-on bonus available?",
@@ -74,15 +78,15 @@
                 "value": 0
             },
             {
-                "text": "A degree or equivalent experience of at least 10 years",
+                "text": "A degree OR equivalent experience of at least 10 years",
                 "value": 90000
             },
             {
-                "text": "A degree or equivalent experience of at least 5 years",
+                "text": "A degree OR equivalent experience of at least 5 years",
                 "value": 80000
             }
         ],
-        "reason": "I love learning but I don't have a college degree."
+        "reason": "Even though I love learning, I don't have a college degree."
     },
     {
         "question": "This role requires expert knowledge in:",
@@ -108,7 +112,7 @@
                 "value": 600000
             }
         ],
-        "reason": "I love coffee but don't want to work with Java."
+        "reason": "I don't have expert level knowledge in Java."
     },
     {
         "question": "What type of role is this?",
@@ -123,7 +127,7 @@
             },
             {
                 "text": "Freelance / 1099",
-                "value": 8000000
+                "value": 5000000
             }
         ],
         "reason": "Sorry, but contract to hire just isn't for me."
@@ -144,24 +148,24 @@
                 "value": 0
             }
         ],
-        "reason": "If you need 5 or more interviews to know if you have the right candidate, you are not looking for me."
+        "reason": "If you need 5 or more interviews to know if you have the right candidate, you probably aren't looking for me."
     },
     {
-        "question": "Do your development teams use Agile methodology?",
+        "question": "What is your PTO situation?",
         "answers": [
             {
-                "text": "Yes",
+                "text": "Unlimited (within reason)",
                 "value": 900000000
             },
             {
-                "text": "Transitioning to Agile",
+                "text": "+20 days",
                 "value": 500000000
             },
             {
-                "text": "No",
+                "text": "Other",
                 "value": 0
             }
         ],
-        "reason": "Sorry, Agile can be a pain but in the wild west world of software development Agile is the sheriff I need to stay in line."
+        "reason": "Sorry. I love my current Unlimited PTO situation. I'll need something similar."
     }
 ]

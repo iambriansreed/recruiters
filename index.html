@@ -19,13 +19,13 @@
         <title>Recruiters</title>
         <style>
             html {
-                font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
                 line-height: 1.3;
                 font-size: 24px;
             }
 
             * {
-                font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+                font-family: Bahnschrift, 'DIN Alternate', 'Franklin Gothic Medium', 'Nimbus Sans Narrow',
+                    sans-serif-condensed, sans-serif;
             }
 
             body {
@@ -112,8 +112,9 @@
         <div class="page">
             <h1>Hi Recruiters!</h1>
             <p>
-                You're here because you think I might be a good fit for a position you are trying to fill. To not waste
-                your time or mine I have some basic questions I'd like you to answer before we go any futher.
+                You're here because you think I might be a good fit for a position you are trying to fill. To
+                not waste your time or mine I have some basic questions I'd like you to answer before we go
+                any futher.
             </p>
             <form>
                 <div id="sections">Loading...</div>
@@ -126,7 +127,8 @@
                 <h3>I don't think the opportunity is a good fit.</h3>
                 <h4 style="font-style: italic" id="reason">...Loading</h4>
                 <p>
-                    If you think you made a mistake, try again, or if you still think this might work out, contact me on
+                    If you think you made a mistake, try again, or if you still think this might work out,
+                    contact me on
                     <a href="https://www.linkedin.com/in/iambriansreed/">LinkedIn</a>.
                 </p>
                 <img src="https://media.giphy.com/media/f72BA6kQXT4uQ/giphy.gif" width="320" />
@@ -135,22 +137,23 @@
                 <h2>Awesome!</h2>
                 <h3>I think this opportunity might be a good fit.</h3>
                 <p>
-                    Please <a href="https://calendly.com/iambriansreed">schedule time</a> to review the position and
-                    <a href="mailto:me+r@iambrian.com">email me</a> the job description so I can review it before we
-                    meet, make sure to include the fit score: <strong id="fit-score">Loading...</strong>.
+                    Please <a href="https://calendly.com/iambriansreed">schedule time</a> to review the
+                    position and <a href="mailto:me+r@iambrian.com">email me</a> the job description so I can
+                    review it before we meet, make sure to include the fit score:
+                    <strong id="fit-score">Loading...</strong>.
                 </p>
                 <img src="https://media.giphy.com/media/111ebonMs90YLu/giphy.gif" width="320" />
             </div>
         </div>
         <div class="footer">
             <div>Made with ❤️ by <a href="/">Brian</a>.</div>
-            <div style="font-size: 70%; color: grey">v4.0.0</div>
+            <div style="font-size: 70%; color: grey">v4.1.0</div>
             <div style="font-size: 70%">Thanks <a href="https://giphy.com"> GIPHY</a>.</div>
         </div>
         <script>
             fetch('sections.json')
-                .then((response) => response.json())
-                .then((sections) => new App(sections));
+                .then((data) => data.json())
+                .then((data) => new App(data));
 
             function App(sectionsData) {
                 this.form = document.forms[0];
@@ -206,7 +209,9 @@
                     }))
                 );
 
-                document.getElementById('sections').innerHTML = sectionsShuffled.map(makeSectionsHtml).join('');
+                document.getElementById('sections').innerHTML = sectionsShuffled
+                    .map(makeSectionsHtml)
+                    .join('');
 
                 show(this.btnNext);
             }
