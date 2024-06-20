@@ -111,10 +111,10 @@
     <body>
         <div class="page">
             <h1>Hi Recruiters!</h1>
-            <p>
+            <p id="intro">
                 You're here because you think I might be a good fit for a position you are trying to fill. To
                 not waste your time or mine I have some basic questions I'd like you to answer before we go
-                any futher.
+                any further.
             </p>
             <form>
                 <div id="sections">Loading...</div>
@@ -168,6 +168,11 @@
                 this.totalValue = 0;
 
                 this.btnNext.onclick = () => {
+                    Object.assign(document.querySelector('#intro').style, {
+                        height: '0',
+                        overflow: 'hidden',
+                    });
+
                     if (this.sectionIndex === -1) {
                         this.btnNext.innerText = 'Next';
                         this.sectionIndex++;
